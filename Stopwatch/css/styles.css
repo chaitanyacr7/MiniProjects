@@ -1,0 +1,47 @@
+body {
+    background-color: orange;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 40px 0px 20px 0px;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    outline: none;
+}
+
+#controls button:not(:last-child) {
+    margin-right: 30px;
+}
+
+#controls {
+    text-align: center;
+}
+
+#timer {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+#timer,
+#controls {
+    padding: 20px 0px 20px 0px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+    transition: background-color 0.5s, color 0.5s;
+}

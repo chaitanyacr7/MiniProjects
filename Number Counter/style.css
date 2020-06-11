@@ -1,0 +1,32 @@
+body {
+    background-color: peru;
+}
+
+#container {
+    position: absolute;
+    text-align: center;
+    top: 19%;
+    left: 50%;
+    height: 400px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+h1 {
+    color: white;
+}
+
+#counter {
+    font-size: 140px;
+}
+
+button {
+    color: white;
+    background-color: #3339ad;
+    font-size: 23px;
+    margin: 30px;
+    display: block;
+    padding: 5px;
+    position: relative;
+    left: 51px;
+}
