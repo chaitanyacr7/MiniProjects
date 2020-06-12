@@ -1,0 +1,73 @@
+body {
+    background-color: black;
+}
+
+.slidecontainer {
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    margin-bottom: 15px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid #b5b0b0;
+    background-color: #e2dbdb;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px 0px 0px 5px;
+    box-sizing: border-box;
+    position: relative;
+    left: 4px;
+    margin-bottom: 12px;
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    padding: 5px 30px 30px 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+input {
+    font-size: 17px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #e2dbdb;
+    border-left: none;
+    /* padding-left: 0px; */
+}
+
+.tip {
+    display: inline-block;
+}
+
+.inputNumber {
+    width: 300px;
+    outline: none;
+}
+
+#tipAmount,
+#totalBill {
+    width: 200px;
+}
+
+#demo {
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+}
+
+#result {
+    display: none;
+}

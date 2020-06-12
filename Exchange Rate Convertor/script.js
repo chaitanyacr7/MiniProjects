@@ -20,8 +20,6 @@ function convertCurrency() {
 
 
 
-
-
     //Displaying Result
     result.innerHTML = amount + " " + convertFrom +
         " = " + dollar + " " + convertTo;
