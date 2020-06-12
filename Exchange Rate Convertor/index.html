@@ -12,7 +12,7 @@
 
     <div id="container">
         <h1>Currency Converter</h1>
-        <input type="number" id="amount" value="0" placeholder="0">
+        <input type="number" id="amount" value="2" placeholder="0">
         <select id="fromCurrency" name="from">
             <option value="india">Indian Rupee</option>
             <option value="usa">USA USD</option>
@@ -21,8 +21,8 @@
           </select>
         <button type="button" id="flip">Flip</button>
         <select id="toCurrency" name="to">
-            <option value="india">Indian Rupee</option>
             <option value="usa">USA USD</option>
+            <option value="india">Indian Rupee</option>
             <option value="uk">UK Pound</option>
             <option value="europe">Europe Euro</option>
           </select>
@@ -31,6 +31,8 @@
 
         </div>
     </div>
+    <button type="button" id="calculate" onclick="convertCurrency()">Calculate</button>
+    <script src="script.js"></script>
 </body>
 
 </html>
