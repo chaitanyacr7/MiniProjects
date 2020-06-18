@@ -46,26 +46,27 @@ body {
     background-color: white;
     height: 45px;
     width: 398px;
+    position: relative;
 }
 
 .newDiv:nth-child(n+1) {
-    border-top: 1px solid grey;
+    border-top: 1px solid #cec6c6;
 }
 
-#newText {
+.newText {
     font-size: 20px;
     position: relative;
     top: 8px;
-    left: 35px;
+    left: 15px;
 }
 
 .fas,
 .fa-bars {
-    position: relative;
+    position: absolute;
     left: 371px;
-    top: 61px;
+    top: 15px;
     color: grey;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .fas:hover,
@@ -76,4 +77,11 @@ body {
 .newDiv:hover .fas,
 .newDiv:hover .fa-bars {
     visibility: visible;
+}
+
+.checkboxClass {
+    position: relative;
+    top: 9px;
+    left: 5px;
+    outline: none;
 }
