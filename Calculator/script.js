@@ -11,7 +11,7 @@ var operators = document.getElementsByClassName("operators");
 var equal = document.getElementById("equal");
 
 
-for (i = 0; i < 11; i++) {
+for (var i = 0; i < 11; i++) {
 
     allNumbers[i].addEventListener("click", function() {
         // for (i = 0; i < allNumbers.length; i++) {

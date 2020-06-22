@@ -47,6 +47,7 @@ body {
     height: 45px;
     width: 398px;
     position: relative;
+    transition: all .5s ease;
 }
 
 .newDiv:nth-child(n+1) {
@@ -84,4 +85,9 @@ body {
     top: 9px;
     left: 5px;
     outline: none;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(30deg);
+    opacity: 0;
 }

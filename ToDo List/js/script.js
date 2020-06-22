@@ -1,14 +1,5 @@
-// function functionOne(x) {
-//     alert(x);
-// }
-
-// function functionTwo(var1, callback) {
-//     callback(var1);
-// }
-
-// functionTwo(2, functionOne);
-
 var add = document.getElementById("plus");
+add.addEventListener("click", addNote);
 
 //Enter Button
 document.getElementById("userInput").addEventListener("keyup", function(event) {
@@ -19,11 +10,11 @@ document.getElementById("userInput").addEventListener("keyup", function(event) {
 });
 
 //add list
-add.onclick = function addNote() {
+function addNote() {
     var userInput = document.getElementById("userInput").value;
     //empty note alert
     if (userInput == "") {
-        // alert("Empty Note!");
+        alert("Empty Note!");
 
     } else {
         var div = document.createElement('div');
@@ -33,6 +24,7 @@ add.onclick = function addNote() {
         checkbox.type = "checkbox";
         checkbox.className = "checkboxClass";
         checkbox.name = "checkbox";
+        checkbox.id = "checkd";
         div.appendChild(checkbox);
 
         var text = document.createElement("span");
@@ -53,50 +45,33 @@ add.onclick = function addNote() {
         text.innerHTML = userInput;
         document.getElementById("userInput").value = "";
 
-        // var checkboxNote = document.querySelector("input[name=checkbox]");
-        // checkboxNote.addEventListener("change", function() {
-        //     if (this.checked) {
-        //         document.getElementById("newText").style.textDecoration = "line-through";
-        //         document.getElementById("newText").style.color = "grey";
-        //     } else {
-        //         document.getElementById("newText").style.textDecoration = " none";
-        //         document.getElementById("newText").style.color = "black";
-        //     }
-        // })
+        //add delete button
 
-        function toggleDone(event) {
-            if (event.target.matches('.newDiv input[type=checkbox]')) {
-
-                if (event.target.checked) {
-                    var x = document.querySelectorAll("span");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.textDecoration = "line-through";
-                    }
-                    // var a = event.target.checked;
-                    // var y = document.querySelector(a);
-                    // y.style.textDecoration = "line-through";
-
-                    console.log(event.target);
-                } else {
-                    document.querySelector(".newDiv .newText").style.textDecoration = " none";
-                    document.querySelector(".newDiv .newText").style.color = "black";
-                }
-            } else {
-                document.querySelector(".newDiv .newText").style.textDecoration = " none";
-            }
+        var deleteNote = document.getElementsByClassName("newDiv");
+        for (var i = 0; i < deleteNote.length; i++) {
+            deleteNote[i].addEventListener("click", deleteNoteClick);
         }
-        const characterList = document.querySelector('#container')
-        characterList.addEventListener('change', toggleDone)
+
     }
 
 }
 
 //delete note      
-function deleteNote() {
-    var div = document.createElement('div');
-    var deleteNote = document.getElementById("deleteNote");
-    deleteNote.onclick = function() {
-        div.remove();
+function deleteNoteClick(e) {
+    const item = e.target;
+    if (item.id === "deleteNote") {
+        const todo = item.parentElement;
+        todo.classList.add("fall");
+        todo.addEventListener('transitionend', function() {
+            todo.remove();
+        })
+    }
+    if (item.id === "checkd") {
+        console.log(e.target);
+        if (e.target.checked) {
+            item.nextElementSibling.style.textDecoration = "line-through";
+        } else {
+            item.nextElementSibling.style.textDecoration = "none";
+        }
     }
 }
