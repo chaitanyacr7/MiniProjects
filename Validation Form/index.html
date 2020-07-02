@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <table id="mytable">
+        <form id="myform">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" class="fname" autofocus></tds>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname" class="lname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td><input type="checkbox" id="hobby1" value="read" name="hobby">
+                    <label for="hobby1">Reading</label>
+                    <input type="checkbox" id="hobby2" value="read" name="hobby">
+                    <label for="hobby2">Singing</label>
+                    <input type="checkbox" id="hobby3" value="read" name="hobby">
+                    <label for="hobby3">Dancing</label></td>
+            </tr>
+            <tr>
+                <td>Highest Education</td>
+                <td>
+                    <select name="Masters" id="master">
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="PhD">PhD</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Skillset</td>
+                <td>
+                    <select name="skills" id="skills" multiple>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Ruby">Ruby</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Marital Status</td>
+                <td><input type="radio" name="marital" id="married" value="Married">
+                    <label for="Married">Married</label>
+                    <input type="radio" id="Unmarried" name="marital" value="Unmarried">
+                    <label for="Unmarried">Unmarried</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Name of the spouse</td>
+                <td><input type="text" name="spouse" id="spouse"> </td>
+            </tr>
+            <tr>
+                <td>Other Details</td>
+                <td><textarea name="otherdetails"></textarea></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="text" name="dob" placeholder="dd/mm/yyyy"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset" id="reset"></td>
+                <td>
+                    <input type="button" id="save" value="SAVE" onclick="validate()">
+                    <button type="button" id="view">VIEW</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <div id="infoTable">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Gender</td>
+                <td>Other Details</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
