@@ -10,8 +10,18 @@ table tr:last-child td {
 
 #infoTable {
     display: none;
+    margin-top: 20px;
 }
 
 #infoTable table {
     border-collapse: collapse;
+    background-color: #cac1c1;
+    /* padding: 14px; */
+}
+
+#infoTable table,
+#infoTable tr,
+#infoTable td {
+    padding: 5px;
+    text-align: center;
 }
