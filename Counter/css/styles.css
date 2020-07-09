@@ -1,0 +1,85 @@
+button {
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 13px;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: x-large;
+}
+
+h1,
+.counterAllValues,
+.counterValue {
+    display: inline;
+}
+
+.resetButton {
+    background-color: #a2a2e2;
+}
+
+.deleteButton {
+    background-color: #ff0202;
+}
+
+.addButton,
+.subtractButton {
+    background-color: #a09595;
+    width: 36px;
+}
+
+.counterAllValues {
+    padding: 25px;
+}
+
+button {
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 13px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: x-large;
+}
+
+h1,
+.counterAllValues,
+.counterValue {
+    display: inline;
+}
+
+.resetButton {
+    background-color: #a2a2e2;
+}
+
+.deleteButton {
+    background-color: #ff0202;
+}
+
+.addButton,
+.subtractButton {
+    background-color: #a09595;
+    width: 36px;
+}
+
+.counterAllValues {
+    padding: 25px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
